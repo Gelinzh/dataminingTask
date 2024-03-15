@@ -4,6 +4,8 @@
 
 选取数据集来源：[Github Dataset](https://www.kaggle.com/datasets/nikhil25803/github-dataset?select=repository_data.csv)
 
+本文档代码托管仓库：[Github Repo](https://github.com/Gelinzh/dataminingTask/tree/main)
+
 
 ```python
 import csv
@@ -94,8 +96,9 @@ print(f"file: {path_0}\ntitles: {titles_0}\n")
 
     file: ./github_dataset.csv
     titles: {0: 'repositories', 1: 'stars_count', 2: 'forks_count', 3: 'issues_count', 4: 'pull_requests', 5: 'contributors', 6: 'language'}
-    
-    
+
+
+​    
 
 + 标称属性：language
 
@@ -119,9 +122,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](output_5_0.png)
-    
+​    
 
 
 + 数值属性：stars_count、forks_count、issues_count、pull_requests、contributors
@@ -151,7 +154,7 @@ draw_table(digit_properties)
     | pull_requests | 0.0 | 0.0 | 0.0  |  2.0  | 567.0 |
     | contributors  | 0.0 | 0.0 | 2.0  |  4.0  | 658.0 |
     +---------------+-----+-----+------+-------+-------+
-    
+
 
 #### 1.1.2 数据可视化
 
@@ -193,9 +196,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](output_9_0.png)
-    
+​    
 
 
 + 直方图（所有数据）
@@ -230,31 +233,31 @@ for idx, (name, data) in enumerate({name:ls for name, ls in dataset_0.items() if
 ```
 
 
-    
+​    
 ![png](output_11_0.png)
-    
+​    
 
 
 
-    
+
 ![png](output_11_1.png)
     
 
 
 
-    
+
 ![png](output_11_2.png)
     
 
 
 
-    
+
 ![png](output_11_3.png)
     
 
 
 
-    
+
 ![png](output_11_4.png)
     
 
@@ -300,8 +303,9 @@ print(f"file: {path_1}\ntitles: {titles_1}\n")
 
     file: ./repository_data.csv
     titles: {0: 'name', 1: 'stars_count', 2: 'forks_count', 3: 'watchers', 4: 'pull_requests', 5: 'primary_language', 6: 'languages_used', 7: 'commit_count', 8: 'created_at', 9: 'licence'}
-    
-    
+
+
+​    
 
 + 标称属性：primary_language、languages_used、licence
 
@@ -335,9 +339,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](output_17_0.png)
-    
+​    
 
 
 
@@ -369,9 +373,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](output_18_0.png)
-    
+​    
 
 
 
@@ -397,9 +401,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](output_19_0.png)
-    
+​    
 
 
 + 数值属性：stars_count、forks_count、watchers、pull_requests、commit_count
@@ -431,12 +435,12 @@ draw_table(digit_properties)
     | pull_requests | 0.0  | 0.0 | 1.0  | 6.0  | 301585.0  |
     | commit_count  | -1.0 | 9.0 | 27.0 | 89.0 | 4314502.0 |
     +---------------+------+-----+------+------+-----------+
-    
+
 
 #### 2.1.2 数据可视化
 
 + 包含全部数据的数值属性盒图、去除离群点的盒图，以及去除Q1、Q3之外数据的盒图
-    
+  
     （为了显示清楚，第二行为数值较小的三组数据）
 
 
@@ -504,9 +508,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](output_23_0.png)
-    
+​    
 
 
 + 直方图（所有数据）
@@ -541,31 +545,31 @@ for idx, (name, data) in enumerate({name:ls for name, ls in dataset_1.items() if
 ```
 
 
-    
+​    
 ![png](output_25_0.png)
-    
+​    
 
 
 
-    
+
 ![png](output_25_1.png)
     
 
 
 
-    
+
 ![png](output_25_2.png)
     
 
 
 
-    
+
 ![png](output_25_3.png)
     
 
 
 
-    
+
 ![png](output_25_4.png)
     
 
